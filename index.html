@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App by JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <form id="form">
-        <input type="text" id="search" placeholder="Search By Loaction" autocomplete="off">
-    </form>
-    <main id="main">
+    <div id="weather-container">
+        <h2>Weather App by JS</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
 
-    </main>
+        <img id="weather-icon" alt="Weather Icon">
 
-    <script src="script.js"></script>
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+    <script src="./script.js"></script>
 </body>
-
 </html>
